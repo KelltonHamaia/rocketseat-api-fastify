@@ -1,0 +1,40 @@
+
+### Create course
+POST http://localhost:3333/courses
+content-type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNTg0NmVjNy02NTJlLTRjNzYtOGRjMC1iM2EwODhjM2EzYzkiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NjM1MDQyN30.s4VUX_nkaXR7RUHfT3x5ys8lniZ_9_2fOl-fk3cnY6c
+
+{
+    "title": "Curso de React",
+    "description": "Aprendendo coisas de Next"
+}
+
+### Get all courses
+GET http://localhost:3333/courses
+
+
+### get course by name
+GET http://localhost:3333/courses?search=react
+
+### get course order by
+GET http://localhost:3333/courses?orderBy=title
+
+
+### 
+GET http://localhost:3333/courses?orderBy=title
+
+
+
+### get course by id 
+GET http://localhost:3333/courses/3363f8cd-34bb-4800-913c-449a6a59d827
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNTg0NmVjNy02NTJlLTRjNzYtOGRjMC1iM2EwODhjM2EzYzkiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NjM1MDQyN30.s4VUX_nkaXR7RUHfT3x5ys8lniZ_9_2fOl-fk3cnY6c
+
+
+### Login user 
+POST http://localhost:3333/sessions
+content-type: application/json
+
+{
+    "email": "Paula.Nogueira55@hotmail.com",
+    "password": "123456"
+}
